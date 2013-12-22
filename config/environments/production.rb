@@ -86,8 +86,8 @@ Pinteresting::Application.configure do
    # Sets paperclip to upload images to Amazon S3
   config.paperclip_defaults = {
     :storage => :s3,
+    :bucket => ENV['hookahtime'],
     :s3_credentials => {
-      :bucket => ENV['hookahtime'],
       :access_key_id => ENV['AKIAJNYDMTKJJDHV2BXA'],
       :secret_access_key => ENV['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']
     }
